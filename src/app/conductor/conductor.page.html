@@ -1,12 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>conductor</ion-title>
+    <ion-title>Conductor</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="selector"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+<h4>Publicar movilizacion</h4>
 
-<ion-content>
+<ion-card>
+  <ion-card-content>
 
-</ion-content>
+    <ion-item>
+      <ion-label position="stacked">Marca</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Color de vehiculo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Matricula</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Capacidad pasajeros</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Hora de Partida</ion-label>
+      <ion-input type="time"></ion-input>
+    </ion-item>
+
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-col>
+    <ion-button expand="block" (click)="publicar()">Publicar</ion-button>
+  </ion-col>
+
+</ion-card>

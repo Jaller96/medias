@@ -1,12 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title color="primary">Recuperar Contraseña</ion-title>
+    <ion-title>Recuperar Contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="selector"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-card>
+  <ion-card-content>
+    <ion-item>
+      <ion-label position="stacked">Correo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
     <ion-col>
        <ion-button expand="full" (click)="recuperar()">Recuperar Contraseña</ion-button>
     </ion-col>
-  
-</ion-content>
+    </ion-item>
+
+  </ion-card-content>
+</ion-card>
+<ion-card>
+</ion-card>

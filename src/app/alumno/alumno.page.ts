@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-alumno',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlumnoPage implements OnInit {
 
-  constructor() { }
+  constructor(private loadingCtrl: LoadingController) { }
 
   ngOnInit() {
   }
 
+  async espera() {
+    const loading = await this.loadingCtrl.create({
+      message: 'Espere por favor...',
+      duration: 10000,
+      spinner: 'circles',
+    });
+
+    loading.present();
+  }
+  
 }
